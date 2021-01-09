@@ -11,6 +11,20 @@ export const SELECT_OPTIONS = [
 export const CONTROLS = [
   [
     {
+      label: 'Un',
+      style: 'UNDO',
+      className: 'undo',
+      hideLabel: true,
+      handler: 'undo',
+    },
+    {
+      label: 'Re',
+      style: 'REDO',
+      className: 'redo',
+      hideLabel: true,
+      handler: 'redo',
+    },
+    {
       label: 'B',
       style: 'BOLD',
       className: 'bold',

@@ -11,6 +11,8 @@ import Striked from '../../icons/Striked';
 import Ul from '../../icons/Ul';
 import Underline from '../../icons/Underline';
 import StyledButton from './StyledButton';
+import Undo from '../../icons/Undo';
+import Redo from '../../icons/Redo';
 
 const icons = {
   bold: Bold,
@@ -23,6 +25,8 @@ const icons = {
   code: Code,
   striked: Striked,
   img: Media,
+  undo: Undo,
+  redo: Redo,
 };
 
 const Button = ({
@@ -45,12 +49,7 @@ const Button = ({
   const Icon = icons[type];
 
   return (
-    <StyledButton
-      active={active}
-      disabled={disabled}
-      onClick={handleClick}
-      type={type}
-    >
+    <StyledButton active={active} disabled={disabled} onClick={handleClick} type={type}>
       {icons[type] && <Icon />}
       {!hideLabel && label}
     </StyledButton>
